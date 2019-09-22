@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<style type="text/css">
+		#buta{display: block;}
+		#butb{opacity: 0;position: absolute;}
+		#butc{display: block; position: absolute; left: 200px; opacity: 0;}
+		#butd{display: block; position: absolute; left: 1200px; top: 500px; opacity: 0;}
+		#bute{display: block; position: absolute; left: 600px; bottom: 470px; opacity: 0;}
+		h1{padding-left: 100px}
+
+	</style>
+</head>
+<body id="mybody">
+	<img src="wallet.gif" id="buta">
+	<h1>내 돈 어디갔니</h1>
+	<img src="cash.gif" id="butb">
+	<img src="love.gif" id="butc">
+	<img src="love2.gif" id="butd">
+	<img src="no.gif" id="bute">
+	<audio id="flex" loop>
+  		<source src="flex.mp3" type="audio/mpeg">
+	</audio>
+	<script type="text/javascript">
+	buta.onclick = function(){
+		buta.style.opacity = "0";
+		butb.style.opacity = "1";
+		butc.style.opacity = "1";
+		butd.style.opacity = "1";
+		bute.style.opacity = "1";
+		mybody.style.background = "url('cash.gif')";
+		flex.play();
+	}
+	</script>
+</body>
+</html>
